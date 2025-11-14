@@ -7,7 +7,7 @@ transition: slide-left
 
 <ol class="font-bold text-3xl text-slate-700 mbs-30 mis-10">
   <li>Introduction</li>
-  <li>Une équipe en Or </li>
+  <li>Une équipe en OR</li>
   <li>Le code de l'Accessibilité</li>
 </ol>
 

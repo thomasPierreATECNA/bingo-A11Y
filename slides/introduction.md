@@ -1,6 +1,13 @@
 ---
+layout: center
+transition: fade
+---
+
+<h1 class="text-coral font-bold !text-9xl">Introduction</h1>
+
+---
 layout: default
-transition: slide-up
+transition: slide-left
 ---
 
 <h1 class="text-coral font-bold !text-5xl">Introduction.</h1>
@@ -16,15 +23,15 @@ transition: slide-up
   </blockquote>
 
   <img 
-  alt="" 
-  src="/assets/dev-3.png" 
-  class="absolute end-20 bottom-0" 
-  v-after
-  v-motion
-    :delay="125"
-    :duration="250"
-    :initial="{ x: 350 }"
-    :enter="{ x: 0 }"
+    alt="" 
+    src="/assets/dev-3.png" 
+    class="absolute end-20 bottom-0" 
+    v-after
+    v-motion
+      :delay="125"
+      :duration="250"
+      :initial="{ x: 350 }"
+      :enter="{ x: 0 }"
   />
 
   <p v-click class="mbs-20! text-center text-4xl!">Autrement dit, tout le monde est concerné !</p>
@@ -78,7 +85,15 @@ transition: slide-left
 
 <h1 class="text-coral font-bold !text-5xl">Les réferentiels</h1>
 
-<p class="text-xl">Pour garantir et mesurer l'A11Y, on s'appui sur des référentiels fondamentaux : </p>
+<p class="text-xl">Pour garantir et mesurer l'A11Y, on s'appui sur des référentiels fondamentaux</p>
+
+
+
+<img 
+  alt="" 
+  src="/assets/loi.jpg" 
+  class="absolute end-0 bottom-0"
+/>
 
 ---
 layout: default
@@ -146,13 +161,93 @@ transition: slide-left
 
 <p class="text-xl">C'est le référentiel Français.</p>
 
-<p v-click class="text-xl">Le RGAA est l'application concrète des WCAG dans le contexte légal français. C'est la norme officielle à laquelle doivent se conformer les organismes publics et certaines entreprises privées en France (Loi de 2005 et décret de 2019).</p>
+<p v-click class="text-xl">Le RGAA est l'application concrète des <strong>WCAG</strong> dans le contexte légal français. C'est la norme officielle à laquelle doivent se conformer les organismes publics et certaines entreprises privées en France (Loi de 2005 et décret de 2019).</p>
 
 <p v-click class="text-xl">Il se compose de <a href="https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/" class="text-coral">106 critères répartis en 13 thématiques</a>.</p>
-
-
 
 <blockquote v-click class="mbs-20 mx-40">
   <h2 class="text-xl! mbe-3! font-semibold"><uim-rocket class="text-sky-900"/> Important !</h2>
   <p class="text-lg text-slate-800">Pour qu'un critère soit considéré comme conforme, il faut qu'il le soit sur la totalité des pages de l'échantillon.</p>
 </blockquote>
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
+
+<p class="text-xl">Qui est concerné ?</p>
+
+<p v-click>L'accessibilité numérique en France n'est pas une simple recommandation, mais une obligation légale pour :</p>
+
+<div class="grid grid-cols-2 gap-2xl mbs-5">
+  <div v-click class="flex flex-col gap-lg">
+    <h2 class="text-xl! font-semibold">Le secteur public</h2>
+    <ul class="text-sm!">
+      <li>L'État et ses ministères.</li>
+      <li>Les collectivités territoriales (Régions, Départements, Communes).</li>
+      <li>Les services publiques (Impôts, sécurité sociale, caisse d'allocations familiales, etc.).</li>
+      <li>Les organismes délégataires d'une mission de service public (transport public, organismes de sécurité sociale, établissements de santé, etc.).</li>
+    </ul>
+  </div>
+
+  <div v-click class="flex flex-col gap-lg">
+    <h2 class="text-xl! font-semibold">Le secteur privé</h2>
+    <ul class="text-sm!">
+      <li>Les sites et applications de e-commerce.</li>
+      <li>Services bancaires aux consommateur. (applis, sites web, distributeurs, etc).</li>
+      <li>Services de communication électronique.</li>
+      <li>Services de transport de passagers (applis, sites web, bornes de réservations de billets, etc).</li>
+      <li>Médias audiovisuels (Tv, Streaming video aou audio, etc.)</li>
+      <li>Livres numériques</li>
+    </ul>
+  </div>
+</div>
+
+<blockquote v-click class="mbs-5 mx-30 p-3!">
+  <p class="text-lg text-slate-800">Les entreprise du secteurs privé de moins 10 salarié ou réalisant un chiffre d'affaire de moins de 2 millions d'euros ne sont pas concernées</p>
+</blockquote>
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
+
+<p class="text-xl">Qu'est-ce qu'on doit faire ?</p>
+
+<p class="mbs-20">Pour être en conformité avec l'<strong>EAA</strong>, il faut :</p>
+
+<ul class="mbs-20 flex flex-col gap-5">
+  <li v-click>Avoir entrepris une démarche d'audit du site de ou l'applcation sur un échantillon représentatif.</li>
+  <li v-click>
+    Publier une déclaration d'accessibilité atteignable depuis toutes les pages du site.
+    <ul>
+      <li class="text-sm"><strong>"Accessibilité totalement conforme"</strong> si 100 % des critères sont conformes</li>
+      <li class="text-sm"><strong>"Accessibilité partiellement conforme"</strong> si 50 à 99 % des critères sont conformes</li>
+      <li class="text-sm"><strong>"Accessibilité non conforme"</strong> si 0 à 49 % des critères sont conformes</li>
+    </ul>
+  </li>
+  <li v-click>Publier un schéma pluriannuel de mise en conformité</li>
+</ul>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
+
+<p class="text-xl">Qu'est-ce qu'on risque ?</p>
+
+
+
+<ul class="mbs-15 flex flex-col gap-5">
+  <li v-click>jusqu'a <strong>50 000€ d'amande</strong> par an et par site non accessible. (org. de contrôle : Arcom, DGCCRF, ACPR, etc.)</li>
+  <li v-click>jusqu'a <strong>25 000€ d'amande</strong> par an et par site en cas de non publication de la déclaration d'accessibilité</li>
+  <li v-click>jusqu'a <strong>20 % de part de marché en moins</strong> (C'est le pourcentage de personnes en situation de handicap !)</li>
+  <li v-click><strong>Perte d’accès à certains marchés ou contrats</strong> (Ne pas être accessible peut compliquer la participation à des appels d’offres, notamment publics ou auprès de clients exigeants sur l’accessibilité.)</li>
+  <li v-click><strong>Une réputation entachée</strong> (Une entreprise non conforme peut être perçue comme discriminante ou peu inclusive)</li>
+</ul>

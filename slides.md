@@ -37,6 +37,11 @@ src: ./slides/programme.md
 src: ./slides/introduction.md
 ---
 
+# INTRODUCTION
+---
+src: ./slides/jeu.md
+---
+
 
 # FIN
 ---
