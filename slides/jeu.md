@@ -18,6 +18,8 @@ transition: slide-left
 
 <p v-click>Nous en avons listé 8, à vous de les trouver ! </p>
 
+<a v-after class="inline-block mbs-20 text-coral text-3xl font-semibold" href="https://cv.basileparent.fr/accessible-family-feud/" target="_blank">Lancer le jeu !</a>
+
 <img 
   alt="" 
   src="/assets/feud.png" 
