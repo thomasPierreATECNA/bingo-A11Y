@@ -12,8 +12,52 @@ transition: slide-left
 
 <h1 class="text-coral font-bold !text-5xl">Introduction.</h1>
 
-<p class="text-2xl">Mais d'abord c'est quoi l'accessibilité numérique ?</p>
+<p class="text-2xl">L'acronyme A11Y</p>
 
+<div class="mbs-10 grid grid-cols-2 gap-10 items-center">
+  <img 
+    alt="" 
+    src="/assets/a11y.png"
+    width="500px"
+    class="block" 
+    v-click
+    v-motion
+      :delay="125"
+      :duration="250"
+      :initial="{ y: 350 }"
+      :enter="{ y: 0 }"
+  />
+
+  <div>
+    <p v-after>lorsqu'on parle d'accessibilité numérique, on emploi souvent l'acronyme <b class="text-coral">A11Y</b>.</p>
+    <p v-after>C'est une habitude dans le monde de l'informatique de creer des abréviations à partir de la première et de la dernière lettre, et du nombre lettre entre les deux.</p>
+  </div>
+</div>
+
+<blockquote v-click class="mbs-5 mx-20" >
+  <h2 class="text-xl! mbe-3! font-semibold"><uim-rocket class="text-sky-900"/> Bon à savoir !</h2>
+  <p class="text-md text-slate-800">Il y d'autre exemples de "numéronymies" : <b>i18n</b>, <b>k8s,</b> <b>l10n</b>, <b>p13n</b>, etc.</p>
+  
+
+</blockquote>
+
+<!-- 
+i18n: Internationalization
+k8s: Kubernetes
+l10n: Localization
+p13n: Personalization
+ -->
+
+
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-5xl">Introduction.</h1>
+
+<p class="text-2xl">Mais d'abord c'est quoi l'accessibilité numérique ?</p>
 
 <div class="mbs-10 max-w-[65%] text-2xl!">
   <blockquote v-click class="text-2xl! p-5!">
@@ -42,11 +86,11 @@ layout: default
 transition: slide-left
 ---
 
-<h1 class="text-coral font-bold !text-5xl">les grands types de handicap</h1>
+<h1 class="text-coral font-bold !text-5xl">Définissons le handicap</h1>
 
 <p class="text-2xl">Il existe 5 grands types de handicap : </p>
 
-<ul class="mbs-10">
+<ul class="mbs-5">
   <li v-click><strong>le handicap moteur: </strong> (difficulté de mouvement, paralysie, amputation, etc.)</li>
   <li v-click><strong>le handicap sensoriel: </strong> (cécité ou surdité, totale ou partielle)</li>
   <li v-click><strong>le handicap mental: </strong> (Déficience intellectuelle légère, modérée ou sévère)</li>
@@ -54,10 +98,16 @@ transition: slide-left
   <li v-click><strong>le handicap cognitif: </strong> (troubles DYS, autisme, TDA, etc.)</li>
 </ul>
 
-<blockquote v-click class="mbs-10 mx-20">
+<blockquote v-click class="mbs-5 mx-20" >
   <h2 class="text-xl! mbe-3! font-semibold"><uim-rocket class="text-sky-900"/> Bon à savoir !</h2>
-  <p class="text-lg text-slate-800">Un handicap peut-être permanent ou provisoire.</p>
-  <p class="text-lg text-slate-800">On peux se retrouver dans une situation de handicap provisoire comme un bras dans le plâtre, un environement bruyant, un ecran de téléphone brisé, etc.</p>
+  <p class="text-slate-800">Un handicap peut-être permanent ou provisoire.</p>
+  <p class="text-slate-800">On peux se retrouver dans une situation de handicap provisoire : 
+  <ul class="mis-10">
+    <li>un bras dans le plâtre </li>
+    <li>un environement bruyant </li>
+    <li>un ecran de téléphone brisé</li>
+    <li>etc.</li>
+  </ul></p>
 </blockquote>
 
 ---
@@ -67,7 +117,7 @@ transition: slide-left
 
 <div class="flex flex-col gap-10 items-start text-start max-w-[60%] mis-auto">
   <h1 class="text-coral font-bold !text-5xl">Question !</h1>
-  <p class="text-2xl">Combien de personnes<br/>en situation de handicap en France selon vous ? </p>
+  <p class="text-2xl">Combien y a-t-il de personnes<br/>en situation de handicap en France selon vous ? </p>
 
   <img alt="" src="/assets/dev-6.png" class="absolute start-20 bottom-0"/>
 
@@ -216,18 +266,18 @@ transition: slide-left
 
 <h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
 
-<p class="text-xl">Qu'est-ce qu'on doit faire ?</p>
+<p class="text-xl">Que faut-il faire ?</p>
 
 <p class="mbs-20">Pour être en conformité avec l'<strong>EAA</strong>, il faut :</p>
 
 <ul class="mbs-20 flex flex-col gap-5">
-  <li v-click>Avoir entrepris une démarche d'audit du site de ou l'applcation sur un échantillon représentatif.</li>
+  <li v-click>Avoir entrepris une démarche d'audit du site ou l'applcation sur un échantillon représentatif de pages.</li>
   <li v-click>
     Publier une déclaration d'accessibilité atteignable depuis toutes les pages du site.
     <ul>
-      <li class="text-sm"><strong>"Accessibilité totalement conforme"</strong> si 100 % des critères sont conformes</li>
-      <li class="text-sm"><strong>"Accessibilité partiellement conforme"</strong> si 50 à 99 % des critères sont conformes</li>
-      <li class="text-sm"><strong>"Accessibilité non conforme"</strong> si 0 à 49 % des critères sont conformes</li>
+      <li class="text-md"><strong>"Accessibilité totalement conforme"</strong> si 100 % des critères sont conformes</li>
+      <li class="text-md"><strong>"Accessibilité partiellement conforme"</strong> si 50 à 99 % des critères sont conformes</li>
+      <li class="text-md"><strong>"Accessibilité non conforme"</strong> si 0 à 49 % des critères sont conformes</li>
     </ul>
   </li>
   <li v-click>Publier un schéma pluriannuel de mise en conformité</li>
@@ -241,8 +291,6 @@ transition: slide-up
 <h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
 
 <p class="text-xl">Qu'est-ce qu'on risque ?</p>
-
-
 
 <ul class="mbs-15 flex flex-col gap-5">
   <li v-click>jusqu'a <strong>50 000€ d'amande</strong> par an et par site non accessible. (org. de contrôle : Arcom, DGCCRF, ACPR, etc.)</li>
