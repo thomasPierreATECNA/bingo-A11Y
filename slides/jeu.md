@@ -185,14 +185,192 @@ transition: slide-left
 
 <h1 class="text-coral font-bold !text-5xl">4. Les liens d'évitement</h1>
 
-<p>Accéder rapidement aux principales section de la page</p>
+<p>Accéder rapidement aux principales sections de la page</p>
 
-<p v-click>Lorsqu'on navigue sur un site, on consulte plusieurs page. À chaque chargement, le lecteurt d'écran reprends la lecture en haut de la page, ce qui peut-être répétitif !</p>
+<p v-click>Lorsqu'on navigue sur un site, on consulte plusieurs page. À chaque chargement, le lecteur d'écran reprends la lecture en haut de la page, ce qui peut-être répétitif !</p>
 
 <p v-click>les liens d'évitement permettent d'accéder directement au contenu principal, au menu ou encore au pied de page, en un clique.</p>
 
 <p v-after>Ils réduisent la frustration et le temps passé à naviguer, offrant une expérience utilisateur beaucoup plus efficace pour ceux qui ne peuvent pas utiliser la souris.</p>
 
-<a href="https://www.leroymerlin.fr/" target="_blank" class="text-coral text-3xl mbs-10 inline-block">Exemple</a>
+<a v-click href="https://www.leroymerlin.fr/" target="_blank" class="text-coral text-3xl mbs-10 inline-block">Exemple</a>
 
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-5xl">5. La navigation sans souris</h1>
+
+<p>Certaines personnes ne peuvent pas utiliser une souris pour naviguer, il faut proposer des alternatives.</p>
+
+<p v-click>lorsqu'on navigue au clavier, on a besoin de savoir précisément sur quelle élément de la page on interagit.</p>
+
+<p v-click>Pour cela il faut rendre visible le focus de l'élément.</p>
+
+<div v-after class="mbs-20 flex gap-4 justify-center">
+  <button class="outline-offset-4 outline-coral px-6 py-2 rounded-md text-white bg-coral">Ajouter au panier</button>
+  <button class="outline-offset-4 outline-coral px-6 py-2 rounded-md text-white bg-slate-600">Voir mon panier</button>
+</div>
+
+<div v-after class="mx-60  mbs-10 flex flex-col gap-1 justify-center">
+  <label for="input-5768">S'abonner à la newsletter</label>
+  <input id="input-5768" type="text" class="outline-offset-4 outline-coral px-6 py-2 rounded-md border-2 border-slate-800"/>
+</div>
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-5xl">6. la sémantique HTML</h1>
+
+<p>Les balises HTML sont bien faites et en principe accessibles. Il en existe plus d'une centaine pour tous les usages.</p>
+
+<p v-click>Plus le code sera sémantiquement correcte, plus la page sera comprise et interprétée par les lecteurs d'écran, et donc par les utilisateur en situation de handicap visuel.</p>
+
+<p v-click class="mbe-0!">Quelques exemples :</p>
+
+<div class="flex gap-5 items-end">
+
+<div v-click class="mbs-3 flex">
+```html
+<!-- Une balise mal utilisée -->
+<a role="button" href="#" onclick="...">
+  Ajouter au panier
+</a> 
+
+<button onclick="...">Ajouter au panier</a>
+```
+</div>
+
+<div v-click class="mbs-3 flex">
+```html
+<!-- Une image porteuse d'information en CSS -->
+<div class="image" style="background-image: url(/img.jpg)"/> 
+
+<img class="image" src="/img.jpg" alt="lorem ipsum..."/>
+```
+</div>
+
+</div>
+
+<div class="flex gap-5">
+<div v-click class="mbs-3 flex">
+```html
+<!-- Trop de div, aucune structure de page -->
+<div class="header">...</div> 
+<div class="content">...</div> 
+<div class="footer">...</div> 
+
+<header class="header">...</header> 
+<main class="content">...</main> 
+<footer class="footer">...</footer> 
+```
+</div>
+
+
+<div v-click class="mbs-3 flex">
+```html
+<!-- Du texte dans des div -->
+<div>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div> 
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p> 
+```
+</div>
+
+</div>
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-5xl">7. Évidence de l'information</h1>
+
+<p>Certaines personnes ont des raisonnements différents ou un handicap qui ne leur permet pas de comprendre une information comme tout le monde.</p>
+
+<p v-click class="mbe-0!">Quelques exemples :</p>
+
+<ul class="mis-10 mbs-5 flex flex-col gap-3">
+  <li v-click>
+    <p class="flex flex-col gap-0 m-0!">
+      <b>Les liens dans un paragraphe de texte</b>
+      Ils doivent clairement de distinguer clairement, et pas uniquement par la couleur.
+    </p>
+  </li>
+
+  <li v-click>
+    <p class="flex flex-col gap-0 m-0!">
+      <b>Les messages d'erreur dans les formulaire</b>
+      Il faut indiquer quel champs est en erreur et pourquoi.
+    </p>
+  </li>
+
+  <li v-click>
+    <p class="flex flex-col gap-0 m-0!">
+      <b>L'élément actif dans un menu de navigation</b>
+      Changer la couleur du lien ou sa forme (en gras par exemple) ne suffit pas.
+    </p>
+  </li>
+
+  <li v-click>
+    <p class="flex flex-col gap-0 m-0!">
+      <b>Les message d'alerte</b>
+      Précisez si il s'agit d'un mesage d'erreur, d'information, de succès, etc.
+    </p>
+  </li>
+
+  <li v-click>
+    <p class="flex flex-col gap-0 m-0!">
+      <b>Les graphiques</b>
+      La couleur ne suffit pas pour distinguer les differents segments, il faut une texture ou des annotations
+    </p>
+  </li>
+
+</ul>
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1 class="text-coral font-bold !text-5xl">8. Les noms accessibles</h1>
+
+<p>Chaque élément interactif de la page doit avoir un nom accesible, c'est à dire un nom qui sera lu par les lecteurs d'écran lors de la prise de focus.</p>
+
+
+<p v-click>L'exemple le plus courant c'est les boutons représentés par un pictograme.</p>
+
+<p v-after>Même si on est capable de déduire la fonction du button par habitude, les lecteurs d'écran eux, en sont incapables. Ils diront simplement "Boutton".</p>
+
+<div v-click class="mbs-1 flex">
+```html
+<!-- Ici on ne sait pas à quoi sert le bouton -->
+<button onClick={login} class="login-btn">
+  <Icon name="user" />
+</button>
+```
+</div>
+
+<div v-click class="mbs-1 flex">
+```html
+<button onClick={login} class="login-btn" aria-label="Se connecter à l'espace client">
+  <Icon name="user" />
+</button>
+```
+</div>
+
+<div v-click class="mbs-1 flex">
+```html
+<button onClick={login} class="login-btn">
+  <span class="sr-only">Se connecter à l'espace client</span>
+  <Icon name="user" />
+</button>
+```
+</div>
 

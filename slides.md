@@ -26,24 +26,22 @@ transition: fade-out
 src: ./slides/accueil.md
 ---
 
-
-# PROGRAME
 ---
 src: ./slides/programme.md
 ---
 
-# INTRODUCTION
 ---
 src: ./slides/introduction.md
 ---
 
-# INTRODUCTION
 ---
 src: ./slides/jeu.md
 ---
 
+---
+src: ./slides/code.md
+---
 
-# FIN
 ---
 transition: slide-left
 layout: center

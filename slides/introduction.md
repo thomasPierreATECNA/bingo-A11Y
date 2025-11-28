@@ -259,14 +259,7 @@ transition: slide-left
   <p class="text-lg text-slate-800">Les entreprise du secteurs privé de moins 10 salarié ou réalisant un chiffre d'affaire de moins de 2 millions d'euros ne sont pas concernées</p>
 </blockquote>
 
----
-layout: default
-transition: slide-left
----
 
-<h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
-
-<p class="text-xl">Que faut-il faire ?</p>
 
 <p class="mbs-20">Pour être en conformité avec l'<strong>EAA</strong>, il faut :</p>
 
