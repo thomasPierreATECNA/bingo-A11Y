@@ -14,7 +14,7 @@ transition: slide-left
 
 <p class="text-2xl">Le principe est très simple !</p>
 
-<p v-click class="mie-50">Vous allez voir une capture d'écran d'un site web, un extrait de code, une video, etc, et vous devrez analyser si l'accesibilité est respectée ou pas.</p>
+<p v-click class="mie-50">Vous allez voir une capture d'écran d'un site web, un extrait de code, une video, etc, et vous devrez analyser si l'accessibilité est respectée ou pas.</p>
 
 <p v-click class="mie-50">Vous aurez alors 2 réponses possibles : </p>
 
@@ -101,7 +101,7 @@ transition: slide-left
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Le texte en gris clair ne sont pas suffisament contrastés (2.32:1)</p>
+  :delay="300" class="text-red-600 text-center font-bold">Les textes en gris clair ne sont pas suffisament contrastés (2.32:1)</p>
 
 
 ---
@@ -185,7 +185,7 @@ layout: default
 transition: fade
 ---
 
-<h1 class="text-coral font-bold !text-3xl">6. Boutton "burger"</h1>
+<h1 class="text-coral font-bold !text-3xl">6. Bouton "burger"</h1>
 
 <div class="mbs-5 flex justify-center items-center">
     <img alt="" src="/assets/apple.png" width="800px" />
@@ -278,7 +278,7 @@ transition: slide-left
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Le text en blanc sur l'image est illisible</p>
+  :delay="300" class="text-red-600 text-center font-bold">Le texte en blanc sur l'image est illisible</p>
 
 
 ---

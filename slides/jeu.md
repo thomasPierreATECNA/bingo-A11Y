@@ -65,23 +65,23 @@ transition: slide-left
   </div>
 
   <div v-click class="is-full flex flex-col gap-4 items-center">
-    <button class="px-3 py-1 rounded-md text-white bg-red-100">Ce boutton n'est pas accesible</button>
-    <button class="px-3 py-1 rounded-md text-white bg-red-600">Ce boutton est accesible</button>
+    <button class="px-3 py-1 rounded-md text-white bg-red-100">Ce bouton n'est pas accessible</button>
+    <button class="px-3 py-1 rounded-md text-white bg-red-600">Ce bouton est accessible</button>
   </div>
 
   <div v-click class="is-full flex flex-col gap-1 items-center">
-    <label for="input-1">Ce champs n'est pas accesible</label>
+    <label for="input-1">Ce champs n'est pas accessible</label>
     <input id="input-1" class="px-3 py-1 rounded-md text-white border border-[#ddd]"  />
-    <label for="input-2">Ce champs est accesible</label>
+    <label for="input-2">Ce champs est accessible</label>
     <input id="input-2" class="px-3 py-1 rounded-md text-white border border-[#333]"  />
   </div>
 
   <div v-click class="is-full flex flex-col gap-2 items-center">
-    <p class="m-0!">Cette barre de progression n'est pas accesible</p>
+    <p class="m-0!">Cette barre de progression n'est pas accessible</p>
     <div class="relative bg-slate-200 w-full h-[20px]">
       <div class="absolute inset-y-0 w-[30%] bg-slate-300 text-white text-xs text-center leading-[20px]">30%</div>
     </div>
-    <p class="m-0!">Cette barre de progression est accesible</p>
+    <p class="m-0!">Cette barre de progression est accessible</p>
     <div class="relative bg-slate-400 w-full h-[20px]">
       <div class="absolute inset-y-0 w-[30%] bg-slate-900 text-white text-xs text-center leading-[20px]">30%</div>
     </div>
@@ -115,7 +115,7 @@ transition: slide-left
 
   <li v-click>
     <strong>Pour les infographies : </strong>
-    <span>Une description de l'image dans l'attribut <code>alt</code> si on utilise une image, ou une balise <code>figcaption</code> dauns une balise <code>figure</code>.</span>
+    <span>Une description de l'image dans l'attribut <code>alt</code> si on utilise une image, ou une balise <code>figcaption</code> dans une balise <code>figure</code>.</span>
   </li>
 </ul>
 
@@ -128,7 +128,7 @@ transition: slide-left
 
 <p class="text-xl">L'utilisation de balise de titre permet de structurer l'information dans la page.</p>
 
-<p v-click>Une structure de titre logique est cohérente permet une bonne comprehension de la page et facilite l'accès au différentes sections. Les lecteurs d'écran utilise les titres pour creer une "Table des matières" de la page.</p>
+<p v-click>Une structure de titre logique est cohérente permet une bonne compréhension de la page et facilite l'accès au différentes sections. Les lecteurs d'écran utilisent les titres pour créer une "Table des matières" de la page.</p>
 
 <div class="grid grid-cols-2 items-center gap-10" >
   <div v-click class="flex flex-col gap-1">
@@ -160,7 +160,7 @@ transition: slide-left
 
 <p class="text-xl">C'est elle qui détermine le titre de la page dans l'onglet du navigateur !</p>
 
-<p v-click>C'est egalement la première chose qui est lue par les lecteur d'écran au chargement de la page. Le contenu de la balise <code>title</code> doit refletter le contenu de la page, et idéalement contenir le nom du site.</p>
+<p v-click>C'est également la première chose qui est lue par les lecteurs d'écran au chargement de la page. Le contenu de la balise <code>title</code> doit refléter le contenu de la page, et idéalement contenir le nom du site.</p>
 
 <ul class="grid grid-cols-[1fr_3fr] gap-2 mbs-10">
   <b class="text-end text-red-600" v-click>Mauvais exemples :</b>
@@ -358,7 +358,7 @@ transition: slide-up
 
 <p v-click>L'exemple le plus courant c'est les boutons représentés par un pictograme.</p>
 
-<p v-after>Même si on est capable de déduire la fonction du button par habitude, les lecteurs d'écran eux, en sont incapables. Ils diront simplement "Boutton".</p>
+<p v-after>Même si on est capable de déduire la fonction du button par habitude, les lecteurs d'écran eux, en sont incapables. Ils diront simplement "Bouton".</p>
 
 <div v-click class="mbs-1 flex">
 ```html

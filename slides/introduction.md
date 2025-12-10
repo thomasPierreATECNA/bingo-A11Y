@@ -30,7 +30,7 @@ transition: slide-left
 
   <div>
     <p v-after>lorsqu'on parle d'accessibilité numérique, on emploi souvent l'acronyme <b class="text-coral">A11Y</b>.</p>
-    <p v-after>C'est une habitude dans le monde de l'informatique de creer des abréviations à partir de la première et de la dernière lettre, et du nombre lettre entre les deux.</p>
+    <p v-after>C'est une habitude dans le monde de l'informatique de créer des abréviations à partir de la première et de la dernière lettre, et du nombre lettre entre les deux.</p>
   </div>
 </div>
 
@@ -98,14 +98,13 @@ transition: slide-left
 
 <blockquote v-click class="mbs-5 mx-20" >
   <h2 class="text-xl! mbe-3! font-semibold"><uim-rocket class="text-sky-900"/> Bon à savoir !</h2>
-  <p class="text-slate-800">Un handicap peut-être permanent ou provisoire.</p>
-  <p class="text-slate-800">On peux se retrouver dans une situation de handicap provisoire : 
+  <p class="text-slate-800">Un handicap peut être permanent ou provisoire. On peut se retrouver dans une situation de handicap provisoire :</p>
   <ul class="mis-10">
     <li>un bras dans le plâtre </li>
-    <li>un environement bruyant </li>
-    <li>un ecran de téléphone brisé</li>
+    <li>un environnement bruyant </li>
+    <li>un écran de téléphone brisé</li>
     <li>etc.</li>
-  </ul></p>
+  </ul>
 </blockquote>
 
 
@@ -133,9 +132,9 @@ layout: default
 transition: slide-left
 ---
 
-<h1 class="text-coral font-bold !text-5xl">Les réferentiels</h1>
+<h1 class="text-coral font-bold !text-5xl">Les référentiels</h1>
 
-<p class="text-xl">Pour garantir et mesurer l'A11Y, on s'appui sur des référentiels fondamentaux</p>
+<p class="text-xl">Pour garantir et mesurer l'A11Y, on s'appuie sur des référentiels fondamentaux</p>
 
 
 
@@ -278,7 +277,7 @@ transition: slide-up
 <p class="mbs-20">Pour être en conformité avec l'<strong>EAA</strong>, il faut :</p>
 
 <ul class="mbs-20 flex flex-col gap-5">
-  <li v-click>Avoir entrepris une démarche d'audit du site ou l'applcation sur un échantillon représentatif de pages.</li>
+  <li v-click>Avoir entrepris une démarche d'audit du site ou l'application sur un échantillon représentatif de pages.</li>
   <li v-click>
     Publier une déclaration d'accessibilité atteignable depuis toutes les pages du site.
     <ul>
@@ -295,13 +294,13 @@ layout: default
 transition: slide-up
 ---
 
-<h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
+<h1 class="text-coral font-bold !text-5xl">Les risques</h1>
 
 <p class="text-xl">Qu'est-ce qu'on risque ?</p>
 
 <ul class="mbs-15 flex flex-col gap-5">
-  <li v-click>jusqu'a <strong>50 000€ d'amande</strong> par an et par site non accessible. (org. de contrôle : Arcom, DGCCRF, ACPR, etc.)</li>
-  <li v-click>jusqu'a <strong>25 000€ d'amande</strong> par an et par site en cas de non publication de la déclaration d'accessibilité</li>
+  <li v-click>jusqu'a <strong>50 000€ d'amende</strong> par an et par site non accessible. (org. de contrôle : Arcom, DGCCRF, ACPR, etc.)</li>
+  <li v-click>jusqu'a <strong>25 000€ d'amende</strong> par an et par site en cas de non publication de la déclaration d'accessibilité</li>
   <li v-click>jusqu'a <strong>20 % de part de marché en moins</strong> (C'est le pourcentage de personnes en situation de handicap !)</li>
   <li v-click><strong>Perte d’accès à certains marchés ou contrats</strong> (Ne pas être accessible peut compliquer la participation à des appels d’offres, notamment publics ou auprès de clients exigeants sur l’accessibilité.)</li>
   <li v-click><strong>Une réputation entachée</strong> (Une entreprise non conforme peut être perçue comme discriminante ou peu inclusive)</li>

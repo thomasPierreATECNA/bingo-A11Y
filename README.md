@@ -7,9 +7,9 @@
 - `npm install`
 - `npm run dev`
 
-Editer [slides.md](./slides.md) pour faire des changelments
+Editer [slides.md](./slides.md) pour faire des changements
 
-## Pour deployer
+## Pour déployer
 
 - `npm install`
 - `npm run build`
