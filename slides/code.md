@@ -20,7 +20,7 @@ transition: slide-left
 
 <div class="flex gap-5 items-center">
     <img v-click alt="" src="/assets/bien-pas-bien.gif" />
-    <p v-after class="italic">
+    <p v-click class="italic">
         * Attention aux gars qui fume dans le rétro !
     </p>
 </div>
@@ -128,7 +128,7 @@ transition: fade
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">L'indication par la couleur n'est pas suffisante.</p>
+  :delay="300" class="text-red-600 text-center font-bold">L'information donnée par la couleur n'est pas suffisante.</p>
 
 
 ---
@@ -143,8 +143,14 @@ transition: slide-left
 </div>
 
 
-<p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">L'indication par la couleur n'est pas suffisante.</p>
+<p class="text-red-600 text-center font-bold">L'information donnée par la couleur n'est pas suffisante.</p>
+
+<img 
+  alt="" 
+  src="/assets/Djamel.png" 
+  width='50'
+  class="absolute end-20 -bottom-8" 
+/>
 
 
 ---
@@ -206,15 +212,11 @@ layout: default
 transition: fade
 ---
 
-<h1 class="text-coral font-bold !text-3xl">7. Video en live"</h1>
+<h1 class="text-coral font-bold !text-3xl">7. Video en live</h1>
 
 <div class="mbs-5 flex justify-center items-center">
-    <SlidevVideo v-click autoplay controls width="180px">
-    <source src="/assets/live-dkt.mp4" type="video/mp4" />
-    <p>
-        Your browser does not support videos. You may download it
-        <a href="/assets/live-dkt.mp4">here</a>.
-    </p>
+    <SlidevVideo autoplay controls width="180px">
+      <source src="/assets/live-dkt.mp4" type="video/mp4" />
     </SlidevVideo>
 </div>
 
@@ -231,7 +233,111 @@ transition: fade
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">La video n'est pas sous-titrée</p>
+  :delay="300" class="text-red-600 text-center font-bold">La video n'est pas sous-titrée, mais...</p>
+
+---
+layout: default
+transition: fade
+---
+
+<h1 class="text-coral font-bold !text-3xl">7. Video en live</h1>
+
+<div class="mis-40 mbs-5 flex gap-20 justify-center items-center">
+    <SlidevVideo controls width="180px">
+      <source src="/assets/live-dkt.mp4" type="video/mp4" />
+    </SlidevVideo>
+   <div class="flex flex-col">
+    <p>Ici il s'agit d'une video live, il est donc difficile et coûteux de sous-titrer ou de proposer une alternative en LSF.</p>
+    <p class="font-bold">Il est possible de demander une <br/><a class="text-coral" target="_blank" href="https://accessibilite.numerique.gouv.fr/obligations/champ-application/">"Dérogation pour charge disproportionnée"</a></p>
+    <p>En revanche, si la vidéo a vocation à rester sur le site apres sa diffusion initiale, alors il faudra la sous-titrer.</p>
+  </div>
+</div>
+
+
+---
+layout: default
+transition: slide-left
+---
+
+<h1 class="text-coral font-bold !text-3xl">8. Facile...</h1>
+
+<div class="mbs-5 flex justify-center items-center">
+    <img alt="" src="/assets/west-forever.png" width="650px" />
+</div>
+
+<img 
+  alt="" 
+  src="/assets/pas-bien.png" 
+  width='550'
+  class="absolute start-50 top-35" 
+  v-click
+  v-motion
+  :duration="300"
+  :initial="{ scale: 1.5, opacity: 0 }"
+  :enter="{ scale: 1, opacity: 1 }"
+/>
+
+<p v-after 
+  :delay="300" class="text-red-600 text-center font-bold">Le text en blanc sur l'image est illisible</p>
+
+
+---
+layout: default
+transition: fade
+---
+
+<h1 class="text-coral font-bold !text-3xl">9. Renault Twingo</h1>
+
+<div class="mbs-5 flex justify-center items-center">
+    <SlidevVideo autoplay controls loop width="850px">
+      <source src="/assets/twingo.mov" type="video/mp4" />
+    </SlidevVideo>
+</div>
+
+<img 
+  alt="" 
+  src="/assets/pas-bien.png" 
+  width='550'
+  class="absolute start-50 top-35" 
+  v-click
+  v-motion
+  :duration="300"
+  :initial="{ scale: 1.5, opacity: 0 }"
+  :enter="{ scale: 1, opacity: 1 }"
+/>
+
+<p v-after 
+  :delay="300" class="text-red-600 text-center font-bold">Les animations sont déclenchées au scroll, et on ne peux pas les désactiver</p>
+
+
+---
+layout: default
+transition: fade
+---
+
+<h1 class="text-coral font-bold !text-3xl">10. Le meilleur pour la fin !</h1>
+
+<div class="mbs-5 flex justify-center items-center">
+    <img alt="" src="/assets/lollipops.png" width="900px" />
+</div>
+
+<img 
+  alt="" 
+  src="/assets/pas-bien.png" 
+  width='550'
+  class="absolute start-50 top-35" 
+  v-click
+  v-motion
+  :duration="300"
+  :initial="{ scale: 1.5, opacity: 0 }"
+  :enter="{ scale: 1, opacity: 1 }"
+/>
+
+<p v-after 
+  :delay="300" class="text-red-600 text-center font-bold">Ici, rien ne va ! <br/>mise en page en tableau, hierarchie des titres, absence de alt, des bouttons à la place des liens, etc, etc...</p>
+
+
+
 
 
 

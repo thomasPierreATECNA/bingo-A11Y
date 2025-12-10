@@ -178,6 +178,13 @@ transition: slide-left
   <code v-after>&lt;title&gt;DECATHLON - DOUDOUNE VESTE JR ADIDAS NOIR&lt;/title&gt;</code>
 </ul>
 
+<img
+  alt="" 
+  width="60"
+  src="/assets/Arny.png" 
+  class="absolute start-10 -bottom-7" 
+/>
+
 ---
 layout: default
 transition: slide-left
@@ -208,14 +215,19 @@ transition: slide-left
 
 <p v-click>Pour cela il faut rendre visible le focus de l'élément.</p>
 
-<div v-after class="mbs-20 flex gap-4 justify-center">
-  <button class="outline-offset-4 outline-coral px-6 py-2 rounded-md text-white bg-coral">Ajouter au panier</button>
-  <button class="outline-offset-4 outline-coral px-6 py-2 rounded-md text-white bg-slate-600">Voir mon panier</button>
+<div v-after class="mx-50 mbs-15 flex gap-4 justify-center">
+  <button class="block w-full outline-offset-4 outline-coral px-6 py-2 rounded-md text-white bg-coral">Ajouter au panier</button>
+  <button class="block w-full outline-offset-4 outline-coral px-6 py-2 rounded-md text-white bg-slate-600">Voir mon panier</button>
 </div>
 
-<div v-after class="mx-60  mbs-10 flex flex-col gap-1 justify-center">
-  <label for="input-5768">S'abonner à la newsletter</label>
+<div v-after class="mx-50 mbs-5 flex flex-col gap-1 justify-center">
+  <label for="input-5768" class="cursor-pointer">S'abonner à la newsletter</label>
   <input id="input-5768" type="text" class="outline-offset-4 outline-coral px-6 py-2 rounded-md border-2 border-slate-800"/>
+</div>
+
+<div v-after class="mx-50 mbs-5 flex gap-1 justify-start">
+  <input id="input-5767" type="checkbox" class="relative appearance-none size-6 marker-coral outline-offset-4 outline-coral rounded-md border-2 border-slate-800 checked:after:content-['✓'] after:absolute after:top-[-10px] after:text-coral after-text-3xl"/> 
+  <label for="input-5767" class="cursor-pointer">J'accepte les conditions</label>
 </div>
 
 ---

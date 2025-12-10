@@ -37,8 +37,6 @@ transition: slide-left
 <blockquote v-click class="mbs-5 mx-20" >
   <h2 class="text-xl! mbe-3! font-semibold"><uim-rocket class="text-sky-900"/> Bon à savoir !</h2>
   <p class="text-md text-slate-800">Il y d'autre exemples de "numéronymies" : <b>i18n</b>, <b>k8s,</b> <b>l10n</b>, <b>p13n</b>, etc.</p>
-  
-
 </blockquote>
 
 <!-- 
@@ -110,6 +108,8 @@ transition: slide-left
   </ul></p>
 </blockquote>
 
+
+
 ---
 layout: default
 transition: slide-left
@@ -175,6 +175,13 @@ transition: slide-left
     <strong>Robuste</strong>: Le contenu doit pouvoir être interprété par une grande variété d'agents utilisateurs, y compris les technologies d'assistance (ex: balises sémantiques correctes).
   </li>
 </ul>
+
+<img 
+  alt="" 
+  width="50"
+  src="/assets/Juju.png" 
+  class="absolute end-10 -top-13 rotate-180" 
+/>
 
 ---
 layout: default
@@ -260,6 +267,13 @@ transition: slide-left
 </blockquote>
 
 
+
+---
+layout: default
+transition: slide-up
+---
+
+<h1 class="text-coral font-bold !text-5xl">Le cadre légal</h1>
 
 <p class="mbs-20">Pour être en conformité avec l'<strong>EAA</strong>, il faut :</p>
 
