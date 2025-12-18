@@ -61,8 +61,9 @@ transition: slide-left
   <blockquote v-click class="text-2xl! p-5!">
     C'est concevoir des interfaces compréhensibles, perceptibles et utilisables par <u>tous</u>. 
     <br/>
-    Y compris les personnes en situation de handicap.
+    (Y compris les personnes en situation de handicap)
   </blockquote>
+
 
   <img 
     alt="" 
@@ -120,7 +121,8 @@ transition: slide-left
 
   <img alt="" src="/assets/dev-6.png" class="absolute start-20 bottom-0"/>
 
-  <p v-click class="text-3xl text-coral font-semibold">Entre 7 et 12 Millions selon les sources </p>
+  <p v-click class="text-3xl text-coral font-semibold">Entre 7 et 12 millions selon les sources </p>
+  
   <ul class="flex flex-col gap-4">
     <li v-click class="text-lg leading-[1.25]! text-start text-slate-600">Plus de 3,1 millions de personnes disposent d'une reconnaissance administrative de leur handicap</li>
     <li v-click class="text-lg leading-[1.25]! text-start text-slate-600">Environ 1,29 million de personnes reçoivent l'Allocation aux Adultes Handicapés (AAH)</li>
@@ -155,23 +157,23 @@ transition: slide-left
 
 <p v-click class="text-xl">Les WCAG sont les directives universelles publiées par le <a class="text-coral" href="https://www.w3.org/WAI/standards-guidelines/wcag/fr">W3C (World Wide Web Consortium)</a>. Elles constituent la base technique de la quasi-totalité des lois et référentiels d'accessibilité dans le monde.</p>
 
-<p v-click class="text-xl">Les WCAG sont structurées autour de quatre principes majeurs (POUR)</p>
+<p v-click class="text-xl">Les WCAG sont structurées autour de quatre principes majeurs (POUR) :</p>
 
-<ul class="flex flex-col gap-5 mie-50">
+<ul class="flex flex-col gap-3 scale-85 -mbs-2">
   <li v-click class="leading-[1.25]!">
-    <strong>Perceptible</strong>: L'information doit être présentée de manière à être perceptible par tous les sens (ex: alternatives textuelles pour les images).
+    <strong>Perceivable (Perceptible)</strong>: <br/>L'information doit être présentée de manière à être perceptible par tous les sens (ex: alternatives textuelles pour les images).
   </li>
 
   <li v-click class="leading-[1.25]!">
-    <strong>Utilisable</strong>: Les composants d'interface et la navigation doivent être utilisables (ex: accessibilité au clavier, temps suffisant pour interagir).
+    <strong>Operable (Utilisable)</strong>:  <br/>Les composants d'interface et la navigation doivent être utilisables (ex: accessibilité au clavier, temps suffisant pour interagir).
   </li>
 
   <li v-click class="leading-[1.25]!">
-    <strong>Compréhensible</strong>: L'information et l'utilisation de l'interface doivent être compréhensibles (ex: texte lisible, prédictibilité des interactions).
+    <strong>Understandable (Compréhensible)</strong>:  <br/>L'information et l'utilisation de l'interface doivent être compréhensibles (ex: texte lisible, prédictibilité des interactions).
   </li>
 
   <li v-click class="leading-[1.25]!">
-    <strong>Robuste</strong>: Le contenu doit pouvoir être interprété par une grande variété d'agents utilisateurs, y compris les technologies d'assistance (ex: balises sémantiques correctes).
+    <strong>Robust (Robuste)</strong>:  <br/>Le contenu doit pouvoir être interprété par une grande variété d'agents utilisateurs, y compris les technologies d'assistance (ex: balises sémantiques correctes).
   </li>
 </ul>
 
@@ -215,9 +217,9 @@ transition: slide-left
 
 <h1 class="text-coral font-bold !text-5xl">Le RGAA <small class="text-xl">(Référentiel Général d'Amélioration de l'Accessibilité)</small></h1>
 
-<p class="text-xl">C'est le référentiel Français.</p>
+<p class="text-xl">Le référentiel Français.</p>
 
-<p v-click class="text-xl">Le RGAA est l'application concrète des <strong>WCAG</strong> dans le contexte légal français. C'est la norme officielle à laquelle doivent se conformer les organismes publics et certaines entreprises privées en France (Loi de 2005 et décret de 2019).</p>
+<p v-click class="text-xl">Le <strong>RGAA</strong> est l'application concrète des <strong>WCAG</strong> dans le contexte légal français. <br/>C'est la norme officielle à laquelle doivent se conformer les organismes publics et certaines entreprises privées en France (Loi de 2005 et décret de 2019).</p>
 
 <p v-click class="text-xl">Il se compose de <a href="https://accessibilite.numerique.gouv.fr/methode/criteres-et-tests/" class="text-coral">106 critères répartis en 13 thématiques</a>.</p>
 
@@ -238,9 +240,9 @@ transition: slide-left
 <p v-click>L'accessibilité numérique en France n'est pas une simple recommandation, mais une obligation légale pour :</p>
 
 <div class="grid grid-cols-2 gap-2xl mbs-5">
-  <div v-click class="flex flex-col gap-lg">
+  <div v-click class="flex flex-col gap-lg border rounded-xl bg-[#FAEEFA] p-2">
     <h2 class="text-xl! font-semibold">Le secteur public</h2>
-    <ul class="text-sm!">
+    <ul class="text-sm! mis-5">
       <li>L'État et ses ministères.</li>
       <li>Les collectivités territoriales (Régions, Départements, Communes).</li>
       <li>Les services publiques (Impôts, sécurité sociale, caisse d'allocations familiales, etc.).</li>
@@ -248,7 +250,7 @@ transition: slide-left
     </ul>
   </div>
 
-  <div v-click class="flex flex-col gap-lg">
+  <div v-click class="flex flex-col gap-lg border rounded-xl bg-[#EEFAFA] p-2">
     <h2 class="text-xl! font-semibold">Le secteur privé</h2>
     <ul class="text-sm!">
       <li>Les sites et applications de e-commerce.</li>
@@ -262,7 +264,7 @@ transition: slide-left
 </div>
 
 <blockquote v-click class="mbs-5 mx-30 p-3!">
-  <p class="text-lg text-slate-800">Les entreprise du secteurs privé de moins 10 salarié ou réalisant un chiffre d'affaire de moins de 2 millions d'euros ne sont pas concernées</p>
+  <p class="text-lg text-slate-800">Les entreprise du secteurs privé de moins 10 salarié ou réalisant un chiffre d'affaire de moins de 2 millions d'euros ne sont pas concernées.</p>
 </blockquote>
 
 
@@ -291,16 +293,21 @@ transition: slide-up
 
 ---
 layout: default
-transition: slide-up
+transition: slide-left
 ---
 
 <h1 class="text-coral font-bold !text-5xl">Les risques</h1>
 
 <p class="text-xl">Qu'est-ce qu'on risque ?</p>
 
-<ul class="mbs-15 flex flex-col gap-5">
+<ul class="mbs-15 flex flex-col gap-3">
   <li v-click>jusqu'a <strong>50 000€ d'amende</strong> par an et par site non accessible. (org. de contrôle : Arcom, DGCCRF, ACPR, etc.)</li>
   <li v-click>jusqu'a <strong>25 000€ d'amende</strong> par an et par site en cas de non publication de la déclaration d'accessibilité</li>
+</ul>
+
+<p class="text-xl mbs-10!" v-click>mais aussi...</p>
+
+<ul class="flex flex-col gap-3">
   <li v-click>jusqu'a <strong>20 % de part de marché en moins</strong> (C'est le pourcentage de personnes en situation de handicap !)</li>
   <li v-click><strong>Perte d’accès à certains marchés ou contrats</strong> (Ne pas être accessible peut compliquer la participation à des appels d’offres, notamment publics ou auprès de clients exigeants sur l’accessibilité.)</li>
   <li v-click><strong>Une réputation entachée</strong> (Une entreprise non conforme peut être perçue comme discriminante ou peu inclusive)</li>

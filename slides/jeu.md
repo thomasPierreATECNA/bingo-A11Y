@@ -130,7 +130,8 @@ transition: slide-left
 
 <p v-click>Une structure de titre logique est cohérente permet une bonne compréhension de la page et facilite l'accès au différentes sections. Les lecteurs d'écran utilisent les titres pour créer une "Table des matières" de la page.</p>
 
-<div class="grid grid-cols-2 items-center gap-10" >
+<div class="grid grid-cols-3 items-center gap-10 mbs-10">
+  <p v-click >Un exemple de structure cohérente sur une PDP :</p>
   <div v-click class="flex flex-col gap-1">
     <div class="font-bold text-sm mis-5">1. DOUDOUNE VESTE JR ADIDAS NOIR</div>
     <div class="font-bold text-sm mis-10">2. Photos du produit</div>
@@ -160,22 +161,22 @@ transition: slide-left
 
 <p class="text-xl">C'est elle qui détermine le titre de la page dans l'onglet du navigateur !</p>
 
-<p v-click>C'est également la première chose qui est lue par les lecteurs d'écran au chargement de la page. Le contenu de la balise <code>title</code> doit refléter le contenu de la page, et idéalement contenir le nom du site.</p>
+<p v-click>C'est également la première chose qui est lue par les lecteurs d'écran au chargement de la page.<br/>Le contenu de la balise <code>title</code> doit refléter le contenu de la page, et idéalement contenir le nom du site.</p>
 
-<ul class="grid grid-cols-[1fr_3fr] gap-2 mbs-10">
-  <b class="text-end text-red-600" v-click>Mauvais exemples :</b>
-  <code v-after>&lt;title&gt;DECATHLON&lt;/title&gt;</code>
-  <b class="text-end text-red-600" v-click></b>
-  <code v-after>&lt;title&gt;DECATHLON - A fond la forme !&lt;/title&gt;</code>
+<ul class="grid grid-cols-[1fr_3fr] gap-2 mbs-10" v-click>
+  <b class="text-end text-red-600" >Mauvais exemples :</b>
+  <code>&lt;title&gt;DECATHLON&lt;/title&gt;</code>
+  <b class="text-end text-red-600" ></b>
+  <code>&lt;title&gt;DECATHLON - A fond la forme !&lt;/title&gt;</code>
 </ul>
 
-<ul class="grid grid-cols-[1fr_3fr] gap-2 mbs-10">
-  <b class="text-end text-[#33CC99]" v-click>Bons exemples :</b>
-  <code v-after>&lt;title&gt;DECATHLON - Accueil&lt;/title&gt;</code>
-  <b class="text-end text-[#33CC99]" v-click></b>
-  <code v-after>&lt;title&gt;DECATHLON - Mon Compte Client&lt;/title&gt;</code>
-  <b class="text-end text-[#33CC99]" v-click></b>
-  <code v-after>&lt;title&gt;DECATHLON - DOUDOUNE VESTE JR ADIDAS NOIR&lt;/title&gt;</code>
+<ul class="grid grid-cols-[1fr_3fr] gap-2 mbs-10" v-click>
+  <b class="text-end text-[#33CC99]">Bons exemples :</b>
+  <code>&lt;title&gt;DECATHLON - Accueil&lt;/title&gt;</code>
+  <b class="text-end text-[#33CC99]"></b>
+  <code>&lt;title&gt;DECATHLON - Mon Compte Client&lt;/title&gt;</code>
+  <b class="text-end text-[#33CC99]"></b>
+  <code>&lt;title&gt;DECATHLON - DOUDOUNE VESTE JR ADIDAS NOIR&lt;/title&gt;</code>
 </ul>
 
 <img
@@ -198,7 +199,7 @@ transition: slide-left
 
 <p v-click>les liens d'évitement permettent d'accéder directement au contenu principal, au menu ou encore au pied de page, en un clique.</p>
 
-<p v-after>Ils réduisent la frustration et le temps passé à naviguer, offrant une expérience utilisateur beaucoup plus efficace pour ceux qui ne peuvent pas utiliser la souris.</p>
+<p v-after>Ils réduisent la frustration et le temps passé à naviguer, offrant une expérience utilisateur beaucoup plus efficace pour les personnes qui ne peuvent pas utiliser la souris.</p>
 
 <a v-click href="https://www.leroymerlin.fr/" target="_blank" class="text-coral text-3xl mbs-10 inline-block">Exemple</a>
 
@@ -239,13 +240,13 @@ transition: slide-left
 
 <p>Les balises HTML sont bien faites et en principe accessibles. Il en existe plus d'une centaine pour tous les usages.</p>
 
-<p v-click>Plus le code sera sémantiquement correcte, plus la page sera comprise et interprétée par les lecteurs d'écran, et donc par les utilisateur en situation de handicap visuel.</p>
+<p v-click>Plus le code sera sémantiquement correcte, plus la page sera comprise et interprétée par les lecteurs d'écran, et donc par les utilisateurs en situation de handicap visuel.</p>
 
 <p v-click class="mbe-0!">Quelques exemples :</p>
 
 <div class="flex gap-5 items-end">
 
-<div v-click class="mbs-3 flex">
+<div v-after class="mbs-3 flex">
 ```html
 <!-- Une balise mal utilisée -->
 <a role="button" href="#" onclick="...">
@@ -309,7 +310,7 @@ transition: slide-left
 <p v-click class="mbe-0!">Quelques exemples :</p>
 
 <ul class="mis-10 mbs-5 flex flex-col gap-3">
-  <li v-click>
+  <li v-after>
     <p class="flex flex-col gap-0 m-0!">
       <b>Les liens dans un paragraphe de texte</b>
       Ils doivent clairement de distinguer clairement, et pas uniquement par la couleur.
@@ -348,7 +349,7 @@ transition: slide-left
 
 ---
 layout: default
-transition: slide-up
+transition: slide-left
 ---
 
 <h1 class="text-coral font-bold !text-5xl">8. Les noms accessibles</h1>
@@ -385,4 +386,3 @@ transition: slide-up
 </button>
 ```
 </div>
-

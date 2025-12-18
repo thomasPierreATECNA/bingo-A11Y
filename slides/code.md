@@ -20,14 +20,14 @@ transition: slide-left
 
 <div class="flex gap-5 items-center">
     <img v-click alt="" src="/assets/bien-pas-bien.gif" />
-    <p v-click class="italic">
+    <p v-after class="italic">
         * Attention aux gars qui fume dans le rétro !
     </p>
 </div>
 
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">1. Moteur de recherche</h1>
@@ -43,17 +43,17 @@ transition: slide-left
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Les champs du formulaire n'ont pas de nom accessible (pas de label)</p>
+  :delay="100" class="text-red-600 text-center font-bold">Le champs de recherche n'a pas de nom accessible (pas de label)</p>
 
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">2. Élement actif du menu</h1>
@@ -69,17 +69,17 @@ transition: slide-left
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-[#22BB88] text-center font-bold">Ici l'information est donnée a la fois par le texte en gras, et par un indicateur visuel.</p>
+  :delay="100" class="text-[#22BB88] text-center font-bold">Ici l'information est donnée a la fois par le texte en gras, et par un indicateur visuel.</p>
 
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">3. Les membres de l'équipe</h1>
@@ -95,13 +95,13 @@ transition: slide-left
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Les textes en gris clair ne sont pas suffisament contrastés (2.32:1)</p>
+  :delay="100" class="text-red-600 text-center font-bold">Les textes en gris clair ne sont pas suffisament contrastés (2.32:1)</p>
 
 
 ---
@@ -122,18 +122,18 @@ transition: fade
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">L'information donnée par la couleur n'est pas suffisante.</p>
+  :delay="100" class="text-red-600 text-center font-bold">L'information est donnée uniquement par la couleur.</p>
 
 
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">4. Graphique en camenbert</h1>
@@ -143,7 +143,7 @@ transition: slide-left
 </div>
 
 
-<p class="text-red-600 text-center font-bold">L'information donnée par la couleur n'est pas suffisante.</p>
+<p class="text-red-600 text-center font-bold">L'information est donnée uniquement par la couleur.</p>
 
 <img 
   alt="" 
@@ -155,7 +155,7 @@ transition: slide-left
 
 ---
 layout: default
-transition: fade
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">5. Alternative textuelle</h1>
@@ -171,18 +171,18 @@ transition: fade
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">L'alternative textuelle est présente mais pas pertinente.</p>
+  :delay="100" class="text-red-600 text-center font-bold">L'alternative textuelle est présente mais pas pertinente.</p>
 
 
 ---
 layout: default
-transition: fade
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">6. Bouton "burger"</h1>
@@ -198,13 +198,13 @@ transition: fade
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-[#22BB88] text-center font-bold">Le bouton a un nom accessible grâce à l'attribut <code>aria-label</code></p>
+  :delay="100" class="text-[#22BB88] text-center font-bold">Le bouton a un nom accessible grâce à l'attribut <code>aria-label</code></p>
 
 
 ---
@@ -227,17 +227,17 @@ transition: fade
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">La video n'est pas sous-titrée, mais...</p>
+  :delay="100" class="text-red-600 text-center font-bold">La video n'est pas sous-titrée, mais...</p>
 
 ---
 layout: default
-transition: fade
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">7. Video en live</h1>
@@ -256,7 +256,7 @@ transition: fade
 
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">8. Facile...</h1>
@@ -272,18 +272,18 @@ transition: slide-left
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Le texte en blanc sur l'image est illisible</p>
+  :delay="100" class="text-red-600 text-center font-bold">Le texte en blanc sur l'image est illisible</p>
 
 
 ---
 layout: default
-transition: fade
+transition: slide-up
 ---
 
 <h1 class="text-coral font-bold !text-3xl">9. Renault Twingo</h1>
@@ -301,18 +301,18 @@ transition: fade
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Les animations sont déclenchées au scroll, et on ne peux pas les désactiver</p>
+  :delay="100" class="text-red-600 text-center font-bold">Les animations sont déclenchées au scroll, et on ne peux pas les désactiver</p>
 
 
 ---
 layout: default
-transition: fade
+transition: slide-left
 ---
 
 <h1 class="text-coral font-bold !text-3xl">10. Le meilleur pour la fin !</h1>
@@ -328,13 +328,13 @@ transition: fade
   class="absolute start-50 top-35" 
   v-click
   v-motion
-  :duration="300"
+  :duration="100"
   :initial="{ scale: 1.5, opacity: 0 }"
   :enter="{ scale: 1, opacity: 1 }"
 />
 
 <p v-after 
-  :delay="300" class="text-red-600 text-center font-bold">Ici, rien ne va ! <br/>mise en page en tableau, hierarchie des titres, absence de alt, des bouttons à la place des liens, etc, etc...</p>
+  :delay="100" class="text-red-600 text-center font-bold">Ici, rien ne va ! <br/>mise en page en tableau, hierarchie des titres, absence de alt, des bouttons à la place des liens, etc, etc...</p>
 
 
 
